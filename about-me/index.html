@@ -47,7 +47,8 @@
     <![endif]-->
 
     <!-- Gallery -->
-    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+	<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
 
     <!-- Google Analytics -->
     
@@ -149,13 +150,24 @@
 <!-- After footer scripts -->
 
 <!-- jQuery -->
-<script src="//code.jquery.com/jquery-latest.js"></script>
+<script src="/js/jquery.js"></script>
 
 <!-- Custom Code -->
 <script src="/js/main.js"></script>
 
 <!-- Gallery -->
+<script src="//code.jquery.com/jquery-latest.js"></script>
 <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.1/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(document).ready(function(){
+$('a.gallery').featherlightGallery({
+		previousIcon: '&#9664;',     /* Code that is used as previous icon */
+		nextIcon: '&#9654;',         /* Code that is used as next icon */
+		galleryFadeIn: 100,          /* fadeIn speed when slide is loaded */
+		galleryFadeOut: 300          /* fadeOut speed before slide is loaded */
+	});
+</script>
 
 <!-- Disqus Comments -->
 
