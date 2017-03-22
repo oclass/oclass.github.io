@@ -10238,7 +10238,6 @@ if ( !noGlobal ) {
 }
 
 
-
 $('a.gallery').featherlightGallery({
 		previousIcon: '«',
 		nextIcon: '»',
