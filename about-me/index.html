@@ -164,11 +164,10 @@
 <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
 <script>
 $('a.gallery').featherlightGallery({
-		previousIcon: '«',
-		nextIcon: '»',
-		galleryFadeIn: 300,
-
-		openSpeed: 300
+	gallery: {
+	next: 'next »',
+	previous: '« previous'
+	},
 	});
 	</script>
 
