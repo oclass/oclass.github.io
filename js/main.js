@@ -10239,13 +10239,13 @@ if ( !noGlobal ) {
 
 
 
-<%- $('a.gallery').featherlightGallery({
+$('a.gallery').featherlightGallery({
 		previousIcon: '«',
 		nextIcon: '»',
 		galleryFadeIn: 300,
 
 		openSpeed: 300
-	});%>
+	});
 
 return jQuery;
 } );
