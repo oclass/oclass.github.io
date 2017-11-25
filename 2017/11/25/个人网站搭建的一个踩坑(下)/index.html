@@ -158,10 +158,10 @@
 </li>
 <li><p>安装Git   <a href="https://git-scm.com/download/win" target="_blank" rel="external">官网</a> <a href="https://github.com/waylau/git-for-win" target="_blank" rel="external">镜像站</a><br>安装完成以后终端执行<code>git --version</code>检查是否安装成功</p>
 </li>
-<li><p>安装Hexo , 当Node.js和Git安装完成以后，可以用cmd安装Hexo , 推荐使用cmder<br> <code>$ npm install -g hexo-cli</code><br>   等待，直至安装完成<br>   考虑安装一些插件  </p>
+<li><p>安装Hexo , 当Node.js和Git安装完成以后，可以用cmd安装Hexo , 推荐使用cmder<br> <code>$ npm install -g hexo-cli</code><br>   等待，直至安装完成<br>   以及一些插件  </p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm install hexo-fs –save  </div><div class="line">npm install hexo-deployer-git@0.3.1 –save  </div><div class="line">npm install hexo-renderer-ejs@0.3.1 –save  </div><div class="line">npm install hexo-server@0.2.2 –save</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm install hexo-fs --save  </div><div class="line">npm install hexo-deployer-git@0.3.1 --save  </div><div class="line">npm install hexo-renderer-ejs@0.3.1 --save  </div><div class="line">npm install hexo-server@0.2.2 --save</div></pre></td></tr></table></figure>
 <p>   　环境安装完成。</p>
 <hr>
 <h4 id="Third，建立本地blog文件夹并部署到GitHub"><a href="#Third，建立本地blog文件夹并部署到GitHub" class="headerlink" title="Third，建立本地blog文件夹并部署到GitHub"></a>Third，建立本地blog文件夹并部署到GitHub</h4><ol>
@@ -175,7 +175,7 @@
 </li>
 <li><p>登录github , 右上角 头像 -&gt; setting -&gt;SSH and GPG keys -&gt; New SSH key . 粘贴，填好title并 Add SSH key</p>
 </li>
-<li><p>验证是否成功。<br><code>ssh –T git@github.com</code><br>第一次会提示continue or not , yes之后会见到成功的提示。</p>
+<li><p>验证是否成功。<br><code>ssh -T git@github.com</code><br>第一次会提示continue or not , yes之后会见到成功的提示。</p>
 </li>
 <li><p>在本地的blog目录下，找到_config.yml，修改其中的参数，参数的含义，emmm , 看英文含义。<br>ps , 每个参数的：后都要加一个空格</p>
 </li>
